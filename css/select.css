@@ -1,0 +1,83 @@
+
+/* メインコンテンツのスタイル */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* リンクのスタイル */
+a {
+    color: #4285f4;
+    /* Googleのブランドカラー */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.record {
+    border: 1px solid #808080;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* レスポンシブデザインの調整 */
+@media screen and (max-width: 600px) {
+    .navbar-default {
+        padding: 10px 5px;
+    }
+
+    .container {
+        width: calc(100% - 20px);
+        margin: 20px 10px;
+    }
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #f8f9fa;
+}
+
+.details-link, .delete-link {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.details-row td {
+    background-color: #f8f9fa;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.page-link.active {
+    background-color: #007bff;
+    color: white;
+}
